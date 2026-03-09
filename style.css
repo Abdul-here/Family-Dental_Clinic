@@ -1237,8 +1237,9 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .wa-panel { grid-template-columns: 1fr; }
 }
 @media (max-width: 900px) {
-  .nav-links, .nav-phone { display: none; }
+  .nav-links, .nav-phone, .nav-wa { display: none; }
   .hamburger { display: flex; }
+  .hamburger span { background: var(--white); }
   .why-grid { grid-template-columns: 1fr; }
   .why-card { height: 320px; }
   .reviews-grid { grid-template-columns: 1fr; }
@@ -1264,6 +1265,14 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .credential-item { border-right: none; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-overlay {
+    background: linear-gradient(
+      120deg,
+      rgba(10,46,26,0.97) 0%,
+      rgba(10,46,26,0.88) 60%,
+      rgba(10,46,26,0.78) 100%
+    );
+  }
 }
 
 /* Placeholder image fallback */
